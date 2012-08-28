@@ -52,19 +52,8 @@ Gem::Specification.new do |s|
     "test/test_apple_push_notification.rb"
   ]
 
-  if s.respond_to? :specification_version then
-    s.specification_version = 3
-
-    if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
-      s.add_runtime_dependency(%q<resque>, [">= 0"])
-      s.add_runtime_dependency(%q<resque-access_worker_from_job>, [">= 0"])
-    else
-      s.add_dependency(%q<resque>, [">= 0"])
-      s.add_dependency(%q<resque-access_worker_from_job>, [">= 0"])
-    end
-  else
-    s.add_dependency(%q<resque>, [">= 0"])
-    s.add_dependency(%q<resque-access_worker_from_job>, [">= 0"])
-  end
+  s.add_runtime_dependency("resque", ">= 0")
+  s.add_runtime_dependency("daemons", ">= 0")
+  s.add_runtime_dependency("resque-access_worker_from_job", ">= 0")
 end
 

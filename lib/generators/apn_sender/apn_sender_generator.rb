@@ -3,5 +3,6 @@ class ApnSenderGenerator < Rails::Generators::Base
 
   def generate_apn_sender
     copy_file "script", "script/apn_server"
+    chmod "script/apn_server", 0755
   end
 end

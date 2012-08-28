@@ -1,0 +1,8 @@
+Description:
+    Generate the daemon script used to launch the apn_sender server
+
+Example:
+    rails generate apn_sender
+
+    This will create:
+        script/apn_sender

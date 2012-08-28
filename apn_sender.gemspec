@@ -24,8 +24,6 @@ Gem::Specification.new do |s|
     "VERSION",
     "apn_sender.gemspec",
     "contrib/apn_sender.monitrc",
-    "generators/apn_sender_generator.rb",
-    "generators/templates/script",
     "init.rb",
     "lib/apn.rb",
     "lib/apn/connection/base.rb",
@@ -38,6 +36,9 @@ Gem::Specification.new do |s|
     "lib/apn/sender_daemon.rb",
     "lib/apn/tasks.rb",
     "lib/resque/hooks/before_unregister_worker.rb",
+    "lib/generators/apn_sender/apn_sender_generator.rb",
+    "lib/generators/apn_sender/templates/script",
+    "lib/generators/apn_sender/USAGE",
     "rails/init.rb",
     "test/helper.rb",
     "test/test_apple_push_notification.rb"
